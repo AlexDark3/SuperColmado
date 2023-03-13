@@ -10,7 +10,7 @@ internal interface IMyDbContext
 
     Task<int> SaveChangesAsync(CancellationToken cancellationToken = default);
 }
-*
+
 internal class MyDbContext : DbContext, IMyDbContext
 {
     protected readonly IConfiguration _configuration;
